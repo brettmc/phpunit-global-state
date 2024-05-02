@@ -12,6 +12,8 @@ trait EnvironmentVariables
     private $environmentVariables = [];
 
     /**
+     * @after
+     *
      * @return void
      */
     #[\PHPUnit\Framework\Attributes\After]
