@@ -12,10 +12,9 @@ trait EnvironmentVariables
     private $environmentVariables = [];
 
     /**
-     * @after
-     *
      * @return void
      */
+    #[\PHPUnit\Framework\Attributes\After]
     protected function restoreEnvironmentVariables()
     {
         foreach ($this->environmentVariables as $variable => $value) {
