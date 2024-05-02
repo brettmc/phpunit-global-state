@@ -23,3 +23,9 @@ parameters:
         -
             message: '#Call to an undefined static method \S+#'
             path: tests/Support/RunkitTest.php
+
+        # PHPUnit 10+ attributes not available in earlier versions
+        -
+            message: '#Attribute class PHPUnit\\Framework\\Attributes\\After does not exist\.#'
+            paths:
+                - src/EnvironmentVariables.php
